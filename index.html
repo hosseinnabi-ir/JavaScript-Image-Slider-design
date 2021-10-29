@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Image Slider using JS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontawesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Project Styles -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="slider">
+
+        <div class="slider-items">
+            <img class="slider-item active" src="01.jpg">
+            <img class="slider-item" src="02.jpg">
+            <img class="slider-item" src="03.jpg">
+        </div>
+
+        <div class="slider-controls">
+            <span
+                class="fas fa-chevron-left prev"
+                onclick="changeSlide(-1)"
+            >
+            </span>
+            <span
+                class="fas fa-chevron-right next"
+                onclick="changeSlide(1)"
+            >
+            </span>
+        </div>
+
+        <div class="slider-indicators">
+            <span class="active" onclick="moveTo(1)"></span>
+            <span onclick="moveTo(2)"></span>
+            <span onclick="moveTo(3)"></span>
+        </div>
+
+    </div>
+
+    <!-- Project Scripts -->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
